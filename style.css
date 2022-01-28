@@ -1,0 +1,158 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 1.8rem;
+}
+:root {
+    --basecolor:#374151;
+    --greycolor: #10b981;
+    --darkgrey:#F3F4F6;
+}
+
+body {
+    font-family: kumbh sans;
+    margin: 0px;
+    background-color: var(--basecolor);
+    color: white;
+}
+
+/** container **/
+
+.container {
+    padding: 0rem 1rem;
+}
+
+.container-center {
+    max-width: 600px;
+    margin: auto;
+}
+
+.navigation {
+    background-color: var(--basecolor);
+    color: white;
+    padding: 0.8rem;
+    border-bottom-left-radius: 1rem;
+}
+
+/** Header **/
+
+.hero {
+    padding: 2rem;
+    /* border: black solid 2px; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#left-content{
+    margin: 10px;
+    padding: 10px;
+}
+
+.hero .small-text{
+    text-align: center;
+    margin: auto;
+    max-width: 400px;
+}
+
+.hero .hero-heading {
+    color: var(--darkgrey);
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+.hero .hero-heading span {
+    color: var(--basecolor);
+}
+.container .hero{
+    padding: 2rem;
+}
+/**  sections **/
+.section{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.section h1 {
+    text-align: center;
+    padding: 2rem;
+}
+.icons{
+    padding: 20px;
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.icons .icons-padding{
+    padding: 25px;
+}
+
+/** footers **/
+
+.footer{
+    background-color: var(--basecolor); 
+    padding: 1rem;
+    color: white;
+    border-top-right-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer .footer-heading{
+    font-weight: bold;
+    font-size: large;
+}
+.footer .link{
+    color: white;
+}
+.footer ul{
+    padding-inline-start: 0px;
+}
+.social-links{
+    padding: 5px;
+    margin: 20px;
+    font-size: 30px;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #367f85;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+  }
+  
+  /* The Close Button */
+  .close {
+    color: rgb(49, 13, 13);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  

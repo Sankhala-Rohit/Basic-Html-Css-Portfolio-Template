@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohit's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e057b28e7b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <nav class="navigation container">
+        <div class="nav-brand">Rohit Sankhla</div>
+    </nav>
+
+    <header class="hero">
+        
+        <div id="left-content">
+            <h1 class="hero-heading">Hey There! 👋 I am Rohit Sankhla</h1>
+            <div class="small-text">
+                <button id="myBtn" style="font-weight:bold;">Know More About Me..</button>
+            </div>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>A self-motivated IT professional with huge knowledge and proficiency in PHP web development with good knowledge of mvc architecture, 
+                        as well as strong skills and ability in writing clean and efficient code. Also knowledge of Drupal 8 and Laravel framework. 
+                        Looking for a position where I can enhance my knowledge of development and design principles and grow with the organization.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container container-center">
+            <h1>Technology </h1>
+        </div>
+        <div class="icons">
+            <i class="fab fa-html5 icons-padding"></i>
+            <i class="fab fa-css3-alt icons-padding"></i>
+            <i class="fab fa-git icons-padding"></i>
+            <i class="fab fa-github icons-padding"></i>
+            <i class="fab fa-js-square icons-padding"></i>
+            <i class="fab fa-react icons-padding"></i>
+            <i class="fab fa-php icons-padding"></i>
+            <i class="fab fa-drupal icons-padding"></i>
+        </div>
+        
+    </section>
+    <div class="container container-center">
+        <footer class="footer container">
+            <div class="footer-heading">
+                <h3>Connect Me</h3>
+            </div>
+            <div class="social-links">
+                <a class="link" href="https://www.linkedin.com/in/rohit-sankhla13/" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a class="link" href="https://twitter.com/RohitSankhla13" target="_blank"><i
+                        class="fab fa-twitter"></i></a>
+                <a class="link" href="https://github.com/Sankhala-Rohit" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+            <small>© Rohit Sankhla. Feel Free To Contact.</small>
+        </footer>
+    </div>
+
+
+<script>
+
+    var modal = document.getElementById("myModal");
+    var btn = document.getElementById("myBtn");
+    var span = document.getElementsByClassName("close")[0];
+
+    btn.onclick = function() {
+    modal.style.display = "block";
+    }
+
+    span.onclick = function() {
+    modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+</body>
+
+</html>
